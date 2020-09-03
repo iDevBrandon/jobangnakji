@@ -1,0 +1,33 @@
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 2.5rem;
+  color: $white;
+  text-align: center;
+  a {
+    color: $white;
+    &:not(last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__social {
+    margin-bottom: 2rem;
+  }
+
+  &__links {
+    margin-bottom: 2rem;
+  }
+
+  &__copyright {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
