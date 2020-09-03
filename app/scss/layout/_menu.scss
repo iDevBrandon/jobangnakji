@@ -3,7 +3,7 @@
 
   h1 {
     text-align: center;
-   }
+  }
   margin-top: 3rem;
   &__grid {
     display: grid;
@@ -25,16 +25,40 @@
   }
 
   &__image {
+    display: grid;
+    position: relative;
+
     img {
       height: 30rem;
       width: 100%;
+      object-fit: cover;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
     }
   }
 
-  &__text {
+  &--title {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    position: absolute;
     padding: 2rem;
+    background-color: #101d2c;
+    align-items: end;
+    z-index: 3;
+    width: 80%;
+    font-size: 2rem;
+    align-self: end;
+    transform: translateY(50%);
+    color: $white;
+    font-family: "East Sea Dokdo", cursive;
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: $white;
   }
 }
