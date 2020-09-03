@@ -2,7 +2,11 @@
 @import "abstracts/mixins";
 
 @import "base/reset";
+@import "base/typography";
 
 @import "layout/grid";
 @import "layout/header";
 @import "layout/hero";
+
+@import 'components/buttons';
+

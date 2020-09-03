@@ -1,0 +1,36 @@
+.hero {
+  background: $veryLightGray;
+
+  &__text {
+    color: $white;
+    background-image: url("/images/octopus1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 70vh;
+    text-align: center;
+    flex-direction: column;
+
+    p {
+      margin-top: 3rem;
+      width: 65%;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.6rem;
+    }
+
+    a {
+      margin-top: 3rem;
+      width: 80%;
+      transition: all 1s ease-in-out;
+
+      &:hover {
+        background-color: darken($red, 15%);
+      }
+    }
+  }
+
+  &__image {
+  }
+}
