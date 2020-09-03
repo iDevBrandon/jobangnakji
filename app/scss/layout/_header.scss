@@ -1,0 +1,45 @@
+.header {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  &__logo {
+    color: black;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  &__links {
+    a {
+      font-size: 1.4rem;
+      color: black;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__cta {
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+// visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
