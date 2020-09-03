@@ -1,0 +1,11 @@
+.container {
+  max-width: 110rem;
+  margin: 0 auto;
+
+  &--all {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
