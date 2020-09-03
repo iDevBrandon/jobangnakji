@@ -1,7 +1,23 @@
 .hero {
   background: $veryLightGray;
 
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+  }
+
   &__text {
+    @include breakpoint-up(large) {
+      background-image: none;
+      flex: 2;
+      order: 1;
+      h1,
+      h2,
+      p {
+        color: black;
+      }
+    }
     color: $white;
     background-image: url("/images/octopus1.jpg");
     background-size: cover;
@@ -22,8 +38,7 @@
     p {
       margin-top: 3rem;
       width: 75%;
-      color: #fff;
-      text-align: center;
+       text-align: center;
       font-weight: 500;
       font-size: 2rem;
     }
@@ -40,5 +55,14 @@
   }
 
   &__image {
+    @include breakpoint-up(large) {
+      background-image: url("/images/store.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      flex: 3;
+      order: 2;
+    }
   }
 }
